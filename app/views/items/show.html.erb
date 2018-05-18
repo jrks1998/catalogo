@@ -10,5 +10,10 @@
   <%= @item.group.name %>
 </p>
 
+<p>
+  <strong>Teor alcoolico:</strong>
+  <%= @item.Teor_alcoolico %>
+</p>
+
 <%= link_to 'Editar', edit_item_path(@item) %> |
 <%= link_to 'Voltar', items_path %>

@@ -15,8 +15,14 @@
     <%= f.label :description %><br>
     <%= f.text_field :description %>
   </div>
+
+<div class="field">
+  <%= f.label :Teor_alcoolico %><br>
+  <%= f.text_field :Teor_alcoolico %>
+</div>
+
   <div class="field">
-    <%= f.label :group_id %><br>
+    <%= f.label :group_id, :Teor_alcoolico %><br>
     <%= f.select :group_id, Group.all.collect { |group| [group.name, group.id]} %>
   </div>
   <div class="actions">
